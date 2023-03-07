@@ -209,8 +209,8 @@ class Cat {
   }
 }
 
-new Cat('Calvin', 5, 'grey')
-
+FirstCat = new Cat('Calvin', 5, 'grey')
+console.log(FirstCat)
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
@@ -232,7 +232,8 @@ class Wizard {
   }
 }
 
-new Wizard ('Gandalf', 202, 'Flipendo')
+let firstWizard = new Wizard ('Gandalf', 202, 'Flipendo')
+firstWizard.castSpell()
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
