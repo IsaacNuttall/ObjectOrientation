@@ -127,13 +127,11 @@ let population = {
   arizona: 11
 }
 
-let{utah: state1} = population
-let{california: state2} = population
-let{texas: state3} = population
-let{arizona: state4} = population
+let{utah, california, texas, arizona} = population
 
-function totalPopulation (state1, state2, state3, state4) {
-  return(state1 + state2 + state3 + state4)
+function totalPopulation (obj) {
+  let{utah, california, texas, arizona} = population
+  return(utah + california + texas + arizona)
 }
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
@@ -153,14 +151,13 @@ let foodGroups = {
   ingredient3: 'protein'
 }
 
-let{ingrdient1: foodgroup1} = foodGroups
-let{ingredient2: foodgroup2} = foodGroups
-let{ingredient3: foodgroup3} = foodGroups
+let{ingrdient1, ingredient2, ingredient3} = foodGroups
 
 let foodArray = []
 
-function ingredients (foodgroup1,foodgroup2,foodgroup3) {
-  foodArray.push(foodgroup1,foodgroup2,foodgroup3)
+function ingredients (obj) {
+  let{ingredient1, ingredient2, ingredient3} = foodGroups
+  foodArray.push(ingredient1, ingredient2, ingredient3)
 }
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
